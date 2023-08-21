@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main()
+{
+   int num,rem,tot=0,temp;
+   printf("enter the number=");
+   scanf("%d",&num);
+   temp=num;
+   while(num>0){
+      rem=num%10;
+      tot+=(rem*rem*rem);
+      num=num/10;
+   }
+   if(temp==tot)
+      printf("This number is Armstrong number");
+   else
+      printf("This number is not Armstrong number");
+   return 0;
+}
